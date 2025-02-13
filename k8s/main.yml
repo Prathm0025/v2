@@ -22,7 +22,26 @@ spec:
               value: "3001"
             - name: NODE_ENV
               value: "development"
-            # Add other environment variables for service1 here
+            - name: JWT_SECRET
+              value: "secret"
+            - name: JWT_REFRESH_SECRET
+              value: "secret"
+            - name: MONGODB_URI
+              value: "mongodb+srv://rohit:1LsyddOtnxWNs1sR@og.bkzn1.mongodb.net/?retryWrites=true&w=majority&appName=OG/test"
+            - name: ROOT_ROLE
+              value: "admin"
+            - name: ROOT_NAME
+              value: "Administrator"
+            - name: ROOT_USERNAME
+              value: "admin"
+            - name: ROOT_PASSWORD
+              value: "admin123"
+            - name: CLOUDINARY_CLOUD_NAME
+              value: "dcrokdpjt"
+            - name: CLOUDINARY_API_KEY
+              value: "855758799355978"
+            - name: CLOUDINARY_API_SECRET
+              value: "NvkyYVIoiWjtfYFyNlJ-ZxtjB90"
           resources:
             requests:
               cpu: "100m"
